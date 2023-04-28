@@ -16,22 +16,22 @@
 	<form id="myForm" >
 		<h3>Confirm your phone number</h3>
 		<input type="tel" id="number" name="number" value="998877667" required>
-		<button type="submit" onclick="re()">Confirm</button>
+		<button type="submit" id="sub">Confirm</button>
 	</form>
 
 	<div id="message"></div>
 
 
 
-  //document.getElementById("myForm").addEventListener("submit", function(event) {
-   // event.preventDefault(); // prevent the form from submitting
-     //   var a=document.getElementsByName("number")[0].value;
-		//var message= "Verify your fingerprint, link is sent to " + a ;
-		//document.getElementById("message").innerHTML = message;
-  //});
-     //   function redirectToTransaction() {
-       //   window.location.href = "transaction.html";
-      //  }
+  <script>
+		var Btn = document.getElementById("sub");
+	
+		Btn.addEventListener("click", function() {
+			setTimeout(function(){
+				window.location.href = "pay.html";
+			}, 5000);
+		});
+	</script>
 
 </body>
 </html>
